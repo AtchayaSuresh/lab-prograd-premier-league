@@ -120,9 +120,9 @@ function SortByAge()
 {
   return players.sort(function compare(player1, player2) {
     let comparison = 0;
-    if (player1.age > player2.age) {
+    if (player1.age < player2.age) {
       comparison = 1;
-    } else if (player1.age < player2.age) {
+    } else if (player1.age > player2.age) {
       comparison = -1;
     }
     return comparison;
